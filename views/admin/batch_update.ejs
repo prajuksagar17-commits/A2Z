@@ -1,0 +1,191 @@
+<%-include('header.ejs');%>
+
+<div class="admin-main">
+
+    <main class="dashboard-content">
+
+        <div class="container-fluid px-3 px-lg-4 py-4">
+
+            <div class="page-heading">
+
+                <div class="page-heading-copy">
+
+                    <span class="page-icon">
+
+                        <i class="bi bi-calendar3" aria-hidden="true"></i>
+
+                    </span>
+
+                    <div>
+
+                        <p class="eyebrow mb-1">
+                            Batches
+                        </p>
+
+                        <h1 class="h3 mb-1">
+                            Update Batch
+                        </h1>
+
+                        <p class="text-muted mb-0">
+                            Update Batch information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <section class="row g-3">
+
+                <div class="col-12 col-xl-8">
+
+                    <form
+                        class="panel"
+                        action="/admin/batch_update_save/<%=data.bid%>"
+                        method="POST">
+
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h2 class="h5 mb-1 section-title">
+
+                                    <i class="bi bi-calendar3" aria-hidden="true"></i>
+
+                                    <span>
+                                        Batch Details
+                                    </span>
+
+                                </h2>
+
+                                <p class="text-muted mb-0">
+                                    Update complete Batch information.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Batch Title -->
+
+                        <div class="mb-3">
+
+                            <label
+                                class="form-label"
+                                for="title">
+
+                                Batch Title
+
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="title"
+                                name="title"
+                                value="<%=data.title%>"
+                                required>
+
+                        </div>
+
+
+                        <!-- Batch Description -->
+
+                        <div class="mb-3">
+
+                            <label
+                                class="form-label"
+                                for="desc">
+
+                                Batch Description
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="desc"
+                                name="desc"
+                                rows="5"
+                                required><%=data.desc%></textarea>
+
+                        </div>
+
+
+                        <!-- Batch Title 2 -->
+
+                        <div class="mb-3">
+
+                            <label
+                                class="form-label"
+                                for="title_2">
+
+                                Batch Title 2
+
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="title_2"
+                                name="title_2"
+                                value="<%=data.title_2%>"
+                                required>
+
+                        </div>
+
+
+                        <!-- Batch Description 2 -->
+
+                        <div class="mb-3">
+
+                            <label
+                                class="form-label"
+                                for="desc_2">
+
+                                Batch Description 2
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="desc_2"
+                                name="desc_2"
+                                rows="5"
+                                required><%=data.desc_2%></textarea>
+
+                        </div>
+
+
+                        <!-- Update -->
+
+                        <div class="d-flex justify-content-end mt-4">
+
+                            <button
+                                class="btn btn-primary"
+                                type="submit">
+
+                                <i
+                                    class="bi bi-save"
+                                    aria-hidden="true"></i>
+
+                                Update Batch
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+<%-include('footer.ejs');%>

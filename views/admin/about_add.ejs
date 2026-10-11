@@ -1,0 +1,328 @@
+```ejs
+<%-include('header.ejs');%>
+
+<div class="admin-main">
+
+    <main class="dashboard-content">
+
+        <div class="container-fluid px-3 px-lg-4 py-4">
+
+            <div class="page-heading">
+
+                <div class="page-heading-copy">
+
+                    <span class="page-icon">
+                        <i class="bi bi-info-circle" aria-hidden="true"></i>
+                    </span>
+
+                    <div>
+
+                        <p class="eyebrow mb-1">
+                            About
+                        </p>
+
+                        <h1 class="h3 mb-1">
+                            Add About
+                        </h1>
+
+                        <p class="text-muted mb-0">
+                            Add About information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <section class="row g-3">
+
+                <div class="col-12 col-xl-8">
+
+                    <form class="panel" action="/admin/about_save" method="POST" enctype="multipart/form-data">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h2 class="h5 mb-1 section-title">
+
+                                    <i class="bi bi-info-circle" aria-hidden="true"></i>
+
+                                    <span>
+                                        About Details
+                                    </span>
+
+                                </h2>
+
+                                <p class="text-muted mb-0">
+                                    Add complete About information.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- About Title -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="title">
+                                About Title
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="title"
+                                name="title"
+                                required>
+
+                        </div>
+
+
+                        <!-- About Description -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="a_desc">
+                                About Description
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="a_desc"
+                                name="a_desc"
+                                rows="5"
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- About Image -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="a_img">
+                                About Image
+                            </label>
+
+                            <input
+                                type="file"
+                                class="form-control"
+                                id="a_img"
+                                name="a_img"
+                                accept="image/*">
+
+                        </div>
+
+
+                        <!-- CEO Name -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="ceo_name">
+                                CEO Name
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="ceo_name"
+                                name="ceo_name"
+                                required>
+
+                        </div>
+
+
+                        <!-- CEO Position -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="c_position">
+                                CEO Position
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="c_position"
+                                name="c_position"
+                                required>
+
+                        </div>
+
+
+                        <!-- CEO Message -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="message"
+                                name="message"
+                                rows="5"
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- CEO Image -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="ceo_img">
+                                CEO Image
+                            </label>
+
+                            <input
+                                type="file"
+                                class="form-control"
+                                id="ceo_img"
+                                name="ceo_img"
+                                accept="image/*">
+
+                        </div>
+
+
+                        <!-- Vision Title -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="vision_title">
+                                Vision Title
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="vision_title"
+                                name="vision_title"
+                                required>
+
+                        </div>
+
+
+                        <!-- Vision Description -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="vision_desc">
+                                Vision Description
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="vision_desc"
+                                name="vision_desc"
+                                rows="4"
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- Vision Image -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="vision_img">
+                                Vision Image
+                            </label>
+
+                            <input
+                                type="file"
+                                class="form-control"
+                                id="vision_img"
+                                name="vision_img"
+                                accept="image/*">
+
+                        </div>
+
+
+                        <!-- Mission Title -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="mission_title">
+                                Mission Title
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="mission_title"
+                                name="mission_title"
+                                required>
+
+                        </div>
+
+
+                        <!-- Mission Description -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="mission_desc">
+                                Mission Description
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="mission_desc"
+                                name="mission_desc"
+                                rows="4"
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- Mission Image -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="mission_img">
+                                Mission Image
+                            </label>
+
+                            <input
+                                type="file"
+                                class="form-control"
+                                id="mission_img"
+                                name="mission_img"
+                                accept="image/*">
+
+                        </div>
+
+
+                        <!-- Submit -->
+
+                        <div class="d-flex justify-content-end mt-4">
+
+                            <button
+                                class="btn btn-primary"
+                                type="submit">
+
+                                <i class="bi bi-save" aria-hidden="true"></i>
+
+                                Save About
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+<%-include('footer.ejs');%>
+

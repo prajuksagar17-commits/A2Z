@@ -1,0 +1,466 @@
+<!-- =========================
+     OUR COURSES SECTION
+========================= -->
+<%-include('header.ejs');%>
+<section class="courses-section" id="courses">
+
+    <!-- TOP BANNER -->
+    <div class="courses-banner">
+        <h1><%= course.title %></h1>
+    </div>
+
+
+    <!-- INTRO -->
+    <div class="courses-wrapper">
+
+        <div class="courses-intro">
+            <p>
+              <%= course.desc %>
+            </p>
+
+        </div>
+
+
+        <!-- COURSE GRID -->
+        <div class="courses-grid">
+
+
+            <!-- 01 CLOUD COMPUTING -->
+            <div class="course-card">
+
+                <div class="course-img">
+                    <img
+                        src="/admin/img/<%= course.img %>"width="100" height="80"
+                        alt="Cloud Computing">
+                </div>
+
+                <div class="course-info">
+
+                    <h2> <%= course.course_name %></h2>
+
+                    <div class="course-line"></div>
+
+                    <p>
+                        <%= course.course_desc %>
+                    </p>
+
+                    <button onclick="openCourseEnquiry('Cloud Computing')">
+                        Enquire →
+                    </button>
+
+                </div>
+
+            </div>
+
+<!-- 
+           02 DEVOPS
+            <div class="course-card">
+
+                <div class="course-img">
+                    <img
+                        src="https://a2zithub.org/training/uploads/176914707299923java.png"
+                        alt="DevOps Engineering">
+                </div>
+
+                <div class="course-info">
+
+                    <h2>DevOps Engineering</h2>
+
+                    <div class="course-line"></div>
+
+                    <p>
+                        Learn Git, CI/CD, Docker, Jenkins, Kubernetes,
+                        automation and modern DevOps practices.
+                    </p>
+
+                    <button onclick="openCourseEnquiry('DevOps Engineering')">
+                        Enquire →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            03 MOBILE DEVELOPMENT -->
+            <!-- <div class="course-card">
+
+                <div class="course-img">
+                    <img
+                        src="https://a2zithub.org/training/uploads/17899998161944ChatGPTImageSep21202607_39_53PM.png"
+                        alt="Mobile Development">
+                </div>
+
+                <div class="course-info">
+
+                    <h2>Mobile Development</h2>
+
+                    <div class="course-line"></div>
+
+                    <p>
+                        Learn mobile application development and
+                        create modern Android and cross-platform
+                        applications.
+                    </p>
+
+                    <button onclick="openCourseEnquiry('Mobile Development')">
+                        Enquire →
+                    </button>
+
+                </div>
+
+            </div> -->
+
+
+            <!-- 04 FRONT END -->
+            <!-- <div class="course-card">
+
+                <div class="course-img">
+                    <img
+                        src="https://a2zithub.org/training/uploads/178999988717307ChatGPTImageSep21202607_40_56PM.png"
+                        alt="Front End Development">
+                </div>
+
+                <div class="course-info">
+
+                    <h2>Front End Development</h2>
+
+                    <div class="course-line"></div>
+
+                    <p>
+                        Learn HTML, CSS, JavaScript, responsive design,
+                        UI development and modern frontend technologies.
+                    </p>
+
+                    <button onclick="openCourseEnquiry('Front End Development')">
+                        Enquire →
+                    </button>
+
+                </div>
+
+            </div> -->
+
+
+            <!-- 05 BACK END -->
+            <!-- <div class="course-card"> 
+
+                <div class="course-img">
+                    <img
+                        src="https://a2zithub.org/training/uploads/178999997016873ChatGPTImageSep21202607_42_37PM.png"
+                        alt="Back End Development">
+                </div>
+
+                <div class="course-info">
+
+                    <h2>Back End Development</h2>
+
+                    <div class="course-line"></div>
+
+                    <p>
+                        Learn server-side programming, APIs, databases,
+                        authentication and backend application development.
+                    </p>
+
+                    <button onclick="openCourseEnquiry('Back End Development')">
+                        Enquire →
+                    </button>
+
+                </div>
+
+            </div> -->
+
+
+            <!-- 06 DATABASE -->
+            <!-- <div class="course-card">
+
+                <div class="course-img">
+                    <img
+                        src="https://a2zithub.org/training/uploads/179000008335314ChatGPTImageSep21202607_44_21PM.png"
+                        alt="Database Developer">
+                </div>
+
+                <div class="course-info">
+
+                    <h2>Database Developer</h2>
+
+                    <div class="course-line"></div>
+
+                    <p>
+                        Learn SQL, database design, queries,
+                        normalization and database management.
+                    </p>
+
+                    <button onclick="openCourseEnquiry('Database Developer')">
+                        Enquire →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="course-card">
+
+                <div class="course-img">
+                    <img
+                        src="https://a2zithub.org/training/uploads/179000015695196ChatGPTImageSep21202607_45_36PM.png"
+                        alt="Software Testing">
+                </div>
+
+                <div class="course-info">
+
+                    <h2>Software Testing</h2>
+
+                    <div class="course-line"></div>
+
+                    <p>
+                        Learn manual testing, automation testing,
+                        test cases, debugging and quality assurance.
+                    </p>
+
+                    <button onclick="openCourseEnquiry('Software Testing')">
+                        Enquire →
+                    </button>
+
+                </div>
+
+            </div>
+ -->
+
+            <!-- 08 C PROGRAMMING -->
+            <!-- <div class="course-card">
+
+                <div class="course-img">
+                    <img
+                        src="https://a2zithub.org/training/uploads/176914875298803Screenshot%202026-01-23%20114141.png"
+                        alt="C Programming">
+                </div>
+
+                <div class="course-info">
+
+                    <h2>C Programming Language</h2>
+
+                    <div class="course-line"></div>
+
+                    <p>
+                        Learn variables, operators, functions, arrays,
+                        pointers, structures and programming fundamentals.
+                    </p>
+
+                    <button onclick="openCourseEnquiry('C Programming Language')">
+                        Enquire →
+                    </button>
+
+                </div>
+
+            </div> -->
+
+
+            <!-- 09 C++ -->
+            <!-- <div class="course-card">
+
+                <div class="course-img">
+                    <img
+                        src="https://a2zithub.org/training/uploads/176914878620692c++.png"
+                        alt="C++ Programming">
+                </div>
+
+                <div class="course-info">
+
+                    <h2>C++ Programming Language</h2>
+
+                    <div class="course-line"></div>
+
+                    <p>
+                        Learn object-oriented programming, classes,
+                        inheritance, polymorphism and STL.
+                    </p>
+
+                    <button onclick="openCourseEnquiry('C++ Programming Language')">
+                        Enquire →
+                    </button>
+
+                </div>
+
+            </div> -->
+
+
+            <!-- 10 DSA -->
+            <!-- <div class="course-card">
+
+                <div class="course-img">
+                    <img
+                        src="https://a2zithub.org/training/uploads/176914894516574ChatGPT%20Image%20Jan%2023,%202026,%2011_44_49%20AM.png"
+                        alt="Data Structures and Algorithms">
+                </div>
+
+                <div class="course-info">
+
+                    <h2>Data Structures & Algorithms</h2>
+
+                    <div class="course-line"></div>
+
+                    <p>
+                        Learn arrays, linked lists, stacks, queues,
+                        trees, graphs and algorithmic problem solving.
+                    </p>
+
+                    <button onclick="openCourseEnquiry('Data Structures and Algorithms')">
+                        Enquire →
+                    </button>
+
+                </div>
+
+            </div> -->
+
+
+            <!-- 11 CYBER SECURITY -->
+            <div class="course-card">
+
+                <div class="course-img">
+                    <img
+                        src="https://a2zithub.org/training/uploads/17691490102160ChatGPT%20Image%20Jan%2023,%202026,%2011_46_03%20AM.png"
+                        alt="Cyber Security">
+                </div>
+
+                <div class="course-info">
+
+                    <h2>Cyber Security</h2>
+
+                    <div class="course-line"></div>
+
+                    <p>
+                        Learn cybersecurity fundamentals, network security,
+                        threats, protection and security best practices.
+                    </p>
+
+                    <button onclick="openCourseEnquiry('Cyber Security')">
+                        Enquire →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 12 UI UX -->
+            <!-- <div class="course-card">
+
+                <div class="course-img">
+                    <img
+                        src="https://a2zithub.org/training/uploads/176914942263971ChatGPT%20Image%20Jan%2023,%202026,%2011_48_32%20AM.png"
+                        alt="UI UX Design">
+                </div>
+
+                <div class="course-info">
+
+                    <h2>UI/UX Design</h2>
+
+                    <div class="course-line"></div>
+
+                    <p>
+                        Learn user interface design, user experience,
+                        wireframes, prototypes and design principles.
+                    </p>
+
+                    <button onclick="openCourseEnquiry('UI UX Design')">
+                        Enquire →
+                    </button>
+
+                </div>
+
+            </div> -->
+
+
+            <!-- 13 DIGITAL MARKETING -->
+            <!-- <div class="course-card">
+
+                <div class="course-img">
+                    <img
+                        src="https://a2zithub.org/training/uploads/176914959644282ChatGPT%20Image%20Jan%2023,%202026,%2011_55_56%20AM.png"
+                        alt="Digital Marketing">
+                </div>
+
+                <div class="course-info">
+
+                    <h2>Digital Marketing</h2>
+
+                    <div class="course-line"></div>
+
+                    <p>
+                        Learn SEO, social media marketing, content
+                        marketing, online advertising and analytics.
+                    </p>
+
+                    <button onclick="openCourseEnquiry('Digital Marketing')">
+                        Enquire →
+                    </button>
+
+                </div>
+
+            </div> -->
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     COURSE ENQUIRY POPUP
+========================= -->
+
+<!-- <div class="course-modal" id="courseModal">
+
+    <div class="course-modal-box">
+
+        <button class="course-close" onclick="closeCourseEnquiry()">
+            ×
+        </button>
+
+        <h2>Course Enquiry</h2>
+
+        <p id="selectedCourseText">
+            Fill your details
+        </p>
+
+        <form id="courseForm">
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="email"
+                id="studentEmail"
+                placeholder="Your Email"
+                required>
+
+            <input
+                type="tel"
+                id="studentMobile"
+                placeholder="Mobile Number"
+                maxlength="10"
+                required>
+
+            <input
+                type="text"
+                id="selectedCourse"
+                placeholder="Selected Course"
+                readonly>
+
+            <button type="submit">
+                Submit Enquiry
+            </button> 
+
+        </form>
+
+    </div>
+
+</div> -->
+<%-include('footer.ejs');%>

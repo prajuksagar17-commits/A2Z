@@ -1,0 +1,27 @@
+update-1 home
+title 1,desc,features,buttons,stats,links
+
+crud-1 about
+About title,a_desc,a_img,ceo name,c_position,message,_ceo img,vision title,description image,mission title,descritpion,image
+ 
+
+ crud-2 courses
+ title 1,desc,img,course_name,couse_Desc,
+
+ update-2 batches
+ title 1 ,desc,title-2,desc-2
+
+ crud-3 internaship
+ title1 ,desc1,title2,points,title-3,mobile,icon,title3,desc2,title-4,desc-3
+
+ crud-4 certification
+ title 1,desc1,title-2,name,certification_no,mobile, icon,title-3,desc2,instruction
+
+ crud5 placements
+ title1,title-2,desc1,title-3,desc2,img,course_name,title-4,desc3,title-3,img,student_name,desc4,icon1,company,tile-3,icon-2,student_name_2,course
+
+ crud-6 jobs
+ title-1,desc,position,city,search
+
+
+

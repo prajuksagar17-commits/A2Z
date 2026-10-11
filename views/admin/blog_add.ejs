@@ -1,0 +1,108 @@
+<%-include('header.ejs');%>
+
+<div class="admin-main">
+    <main class="dashboard-content">
+        <div class="container-fluid px-3 px-lg-4 py-4">
+
+            <div class="page-heading">
+                <div class="page-heading-copy">
+                    <span class="page-icon">
+                        <i class="bi bi-journal-text"></i>
+                    </span>
+                    <div>
+                        <p class="eyebrow mb-1">Blog</p>
+                        <h1 class="h3 mb-1">Add Blog</h1>
+                        <p class="text-muted mb-0">Add Blog Information.</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="row g-3">
+                <div class="col-12 col-xl-8">
+
+                    <form class="panel"
+                        action="/admin/blog_save"
+                        method="POST"
+                        enctype="multipart/form-data">
+
+                        <div class="panel-header">
+                            <h5 class="mb-0">Blog Information</h5>
+                        </div>
+
+                        <div class="p-3 p-lg-4">
+
+                            <div class="mb-3">
+                                <label class="form-label">Title 1</label>
+                                <input type="text" name="title1"
+                                    class="form-control"
+                                    placeholder="Enter title 1" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Description</label>
+                                <textarea name="desc"
+                                    class="form-control" rows="3"
+                                    placeholder="Enter description" required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Blog Image</label>
+                                <input type="file" name="img"
+                                    class="form-control"
+                                    accept="image/*" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Title 2</label>
+                                <input type="text" name="title2"
+                                    class="form-control"
+                                    placeholder="Enter title 2">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Description 2</label>
+                                <textarea name="desc2"
+                                    class="form-control" rows="3"
+                                    placeholder="Enter description 2"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Title 2 (Second)</label>
+                                <input type="text" name="title2_2"
+                                    class="form-control"
+                                    placeholder="Enter second title 2">
+                            </div>
+
+                            
+
+                            <div class="mb-3">
+                                <label class="form-label">Title 3</label>
+                                <input type="text" name="title3"
+                                    class="form-control"
+                                    placeholder="Enter title 3">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Point 2</label>
+                                <textarea name="point2"
+                                    class="form-control" rows="3"
+                                    placeholder="Enter point 2"></textarea>
+                            </div>
+
+                            <div class="d-flex justify-content-end mt-4">
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="bi bi-save"></i> Save Blog
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+</div>
+
+<%-include('footer.ejs');%>

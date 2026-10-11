@@ -1,0 +1,403 @@
+<%-include('header.ejs');%>
+
+<div class="admin-main">
+
+    <main class="dashboard-content">
+
+        <div class="container-fluid px-3 px-lg-4 py-4">
+
+            <div class="page-heading">
+
+                <div class="page-heading-copy">
+
+                    <span class="page-icon">
+                        <i class="bi bi-briefcase" aria-hidden="true"></i>
+                    </span>
+
+                    <div>
+
+                        <p class="eyebrow mb-1">
+                            Jobs
+                        </p>
+
+                        <h1 class="h3 mb-1">
+                            Add Job
+                        </h1>
+
+                        <p class="text-muted mb-0">
+                            Add Job information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <section class="row g-3">
+
+                <div class="col-12 col-xl-8">
+
+                    <form class="panel"
+                          action="/admin/job_save"
+                          method="POST">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h2 class="h5 mb-1 section-title">
+
+                                    <i class="bi bi-briefcase" aria-hidden="true"></i>
+
+                                    <span>
+                                        Job Details
+                                    </span>
+
+                                </h2>
+
+                                <p class="text-muted mb-0">
+                                    Add complete Job information.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Title 1 -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="title_1">
+                                Title 1
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="title_1"
+                                name="title_1"
+                                required>
+
+                        </div>
+
+
+                        <!-- Description 1 -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="desc1">
+                                Description 1
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="desc1"
+                                name="desc1"
+                                rows="5"
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- Position -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="position">
+                                Position
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="position"
+                                name="position"
+                                required>
+
+                        </div>
+
+
+                        <!-- City -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="city">
+                                City
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="city"
+                                name="city"
+                                required>
+
+                        </div>
+
+
+                        <!-- Search -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="search">
+                                Search
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="search"
+                                name="search"
+                                required>
+
+                        </div>
+
+
+                        <!-- Job -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="job">
+                                Job
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="job"
+                                name="job"
+                                required>
+
+                        </div>
+
+
+                        <!-- Experience -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="j_experience">
+                                Job Experience
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="j_experience"
+                                name="j_experience"
+                                required>
+
+                        </div>
+
+
+                        <!-- Salary -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="sallery">
+                                Salary
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="sallery"
+                                name="sallery"
+                                required>
+
+                        </div>
+
+
+                        <!-- Location -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="location">
+                                Location
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="location"
+                                name="location"
+                                required>
+
+                        </div>
+
+
+                        <!-- Role Description -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="role_Description">
+                                Role Description
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="role_Description"
+                                name="role_Description"
+                                rows="5"
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- Title 2 -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="title_2">
+                                Title 2
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="title_2"
+                                name="title_2"
+                                required>
+
+                        </div>
+
+
+                        <!-- Description 2 -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="desc2">
+                                Description 2
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="desc2"
+                                name="desc2"
+                                rows="5"
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- Name -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="name">
+                                Name
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                name="name"
+                                required>
+
+                        </div>
+
+
+                        <!-- Email -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                required>
+
+                        </div>
+
+
+                        <!-- Mobile -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="mobile">
+                                Mobile
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="mobile"
+                                name="mobile"
+                                required>
+
+                        </div>
+
+
+                        <!-- Preferred Position -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="preffered_position">
+                                Preferred Position
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="preffered_position"
+                                name="preffered_position"
+                                required>
+
+                        </div>
+
+
+                        <!-- Preferred Area -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="preffered_area">
+                                Preferred Area
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="preffered_area"
+                                name="preffered_area"
+                                required>
+
+                        </div>
+
+
+                        <!-- Submit -->
+
+                        <div class="d-flex justify-content-end mt-4">
+
+                            <button
+                                class="btn btn-primary"
+                                type="submit">
+
+                                <i class="bi bi-save" aria-hidden="true"></i>
+
+                                Save Job
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+<%-include('footer.ejs');%>

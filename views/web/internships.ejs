@@ -1,0 +1,205 @@
+<%-include('header.ejs');%>
+<section class="internship-section" id="internships">
+
+    <!-- TOP TITLE -->
+    <div class="internship-title">
+        <h1> <%= data1.title1 %></h1>
+    </div>
+
+
+    <!-- INTRO -->
+    <div class="internship-container">
+
+        <p class="internship-intro">
+             <%= data1.desc1 %>
+        </p>
+
+
+        <!-- MAIN INTERNSHIP AREA -->
+        <div class="internship-main-grid">
+
+            <!-- WHY CHOOSE -->
+            <div class="internship-card why-card">
+
+                <h2><%= data1.title2 %></h2>
+
+                <div class="why-list">
+
+                    <div class="why-column">
+
+                        <p>
+                            <span></span>
+                           <%= data1.points %>
+                        </p>
+
+                       
+
+
+                        <button class="internship-red-btn"
+                                onclick="openEnquiry()">
+                            Apply for Internship
+                        </button>
+
+                    </div>
+
+
+                    <div class="why-column">
+
+                       
+
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ENQUIRE CARD -->
+            <div class="internship-card enquire-card">
+
+                <h2> <%= data1.title_3 %></h2>
+
+                <p>
+                    Free counselling on track, timing, fees and
+                    certificate process.
+                </p>
+
+                <a href="tel:+91901144902"
+                   class="internship-phone">
+                    <%= data1.mobile %>
+                </a>
+
+                <button class="internship-send-btn"
+                        onclick="openEnquiry()">
+                    <i class="fa-solid fa-envelope"></i>
+                    Send Enquiry
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- INTERNSHIP TYPES -->
+
+        <div class="internship-types">
+
+            <!-- CLASSROOM -->
+            <div class="internship-type-card">
+
+                <div class="internship-icon">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+
+                <h3><%= data1.title3 %></h3>
+
+                <p>
+                    <%= data1.desc2 %>
+                </p>
+
+                <button onclick="openEnquiry()">
+                    Enquire
+                </button>
+
+            </div>
+
+
+            <!-- ONLINE -->
+           
+
+            <!-- WEEKEND -->
+            <div class="internship-type-card">
+
+                <div class="internship-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+
+                <h3>Weekend Batch</h3>
+
+                <p>
+                    For working learners
+                </p>
+
+                <button onclick="openEnquiry()">
+                    Enquire
+                </button>
+
+            </div>
+
+
+            <!-- REGULAR -->
+            <div class="internship-type-card">
+
+                <div class="internship-icon">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+
+                <h3>Regular Batch</h3>
+
+                <p>
+                    Weekday intensive track
+                </p>
+
+                <button onclick="openEnquiry()">
+                    Enquire
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROGRAM HIGHLIGHTS -->
+
+        <div class="program-highlights">
+
+            <h2>Program highlights</h2>
+
+            <p>
+                <span>✓</span>
+                1/3/6-month IT internship options
+            </p>
+
+            <p>
+                <span>✓</span>
+                Work with lead developers on live technologies
+            </p>
+
+            <p>
+                <span>✓</span>
+                Follow SDLC while building your project
+            </p>
+
+            <p>
+                <span>✓</span>
+                Resume building, mock interviews & placement support
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM CTA -->
+
+    <div class="internship-bottom">
+
+        <h2>
+            Start your internship journey today
+        </h2>
+
+        <p>
+            Skills today. Better tomorrows. Join A2Z IT HUB internship
+            programs in Ahmednagar.
+        </p>
+
+        <button onclick="openEnquiry()">
+            <i class="fa-solid fa-envelope"></i>
+            Enquire Now
+        </button>
+
+    </div>
+
+</section>
+<%-include('footer.ejs');%>

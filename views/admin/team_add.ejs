@@ -1,0 +1,95 @@
+<%-include('header.ejs');%>
+
+<div class="admin-main">
+    <main class="dashboard-content">
+        <div class="container-fluid px-3 px-lg-4 py-4">
+
+            <div class="page-heading">
+                <div class="page-heading-copy">
+                    <span class="page-icon">
+                        <i class="bi bi-people" aria-hidden="true"></i>
+                    </span>
+                    <div>
+                        <p class="eyebrow mb-1">Team</p>
+                        <h1 class="h3 mb-1">Add Team Member</h1>
+                        <p class="text-muted mb-0">Add Team Member information.</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="row g-3">
+                <div class="col-12 col-xl-8">
+
+                    <form class="panel"
+                        action="/admin/team_save"
+                        method="POST"
+                        enctype="multipart/form-data">
+
+                        <div class="panel-header">
+                            <h5 class="mb-0">Team Information</h5>
+                        </div>
+
+                        <div class="p-3 p-lg-4">
+
+                            <div class="mb-3">
+                                <label class="form-label">Title</label>
+                                <input type="text" name="title"
+                                    class="form-control"
+                                    placeholder="Enter title" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Description</label>
+                                <textarea name="desc"
+                                    class="form-control"
+                                    rows="3"
+                                    placeholder="Enter description"
+                                    required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Team Member Image</label>
+                                <input type="file" name="image"
+                                    class="form-control"
+                                    accept="image/*" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Name</label>
+                                <input type="text" name="name"
+                                    class="form-control"
+                                    placeholder="Enter name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Position</label>
+                                <input type="text" name="position"
+                                    class="form-control"
+                                    placeholder="Enter position" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Description 2</label>
+                                <textarea name="desc2"
+                                    class="form-control"
+                                    rows="3"
+                                    placeholder="Enter additional description"></textarea>
+                            </div>
+
+                            <div class="d-flex justify-content-end mt-4">
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="bi bi-save"></i> Save Team
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+</div>
+
+<%-include('footer.ejs');%>

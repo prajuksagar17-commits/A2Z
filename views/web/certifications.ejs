@@ -1,0 +1,176 @@
+
+<%-include('header.ejs');%>
+<section class="certification-section" id="certifications">
+
+    <!-- TITLE -->
+    <div class="certification-title">
+        <h1><%= cdata.title1 %></h1>
+    </div>
+
+    <!-- INTRO -->
+    <div class="cert-container">
+
+        <p class="cert-intro">
+            <%= cdata.desc1 %>
+        </p>
+
+
+        <!-- TWO COLUMN AREA -->
+        <div class="cert-grid">
+
+            <!-- ================= VERIFY CERTIFICATE ================= -->
+
+            <div class="cert-card">
+
+                <div class="cert-card-heading">
+                    <h2>  <%= cdata.title_2 %></h2>
+                </div>
+
+                <div class="cert-card-body">
+
+                    <form id="certificateForm">
+
+                        <input
+                            type="text"
+                            id="studentName"
+                            placeholder="  <%= cdata.name %> *"
+                            required
+                        >
+
+                        <input
+                            type="text"
+                            id="certificateNo"
+                            placeholder="<%= cdata.certification_no %>*"
+                            required
+                        >
+
+                        <input
+                            type="tel"
+                            id="registeredMobile"
+                            placeholder="<%= cdata.mobile %>*"
+                            maxlength="10"
+                            required
+                        >
+
+                        <button type="submit" class="cert-red-btn">
+                            Get OTP
+                        </button>
+
+                    </form>
+
+                    <!-- OTP AREA -->
+                    <div id="otpBox" class="otp-box">
+
+                        <input
+                            type="text"
+                            id="certificateOtp"
+                            placeholder="Enter OTP"
+                            maxlength="6"
+                        >
+
+                        <button
+                            type="button"
+                            onclick="verifyCertificate()"
+                            class="cert-red-btn"
+                        >
+                            Verify Certificate
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= QR SCAN ================= -->
+
+            <div class="cert-card">
+
+                <div class="cert-card-heading">
+
+                    <h2>
+                        <i class=" <%= cdata.icon %>"></i>
+                          <%= cdata.title_3 %>
+                    </h2>
+
+                </div>
+
+                <div class="cert-card-body qr-body">
+
+                    <p>
+                         <%= cdata.desc2 %>
+                    </p>
+
+                    
+
+
+                    <!-- CAMERA BUTTON -->
+
+                    <button
+                        type="button"
+                        class="scan-camera-btn"
+                        onclick="openCertificateCamera()"
+                    >
+                        <i class="fa-solid fa-camera"></i>
+                        Click to Open Camera & Scan
+                    </button>
+
+
+                    <!-- CAMERA AREA -->
+
+                    <div id="cameraBox" class="camera-box">
+
+                        <video
+                            id="certificateCamera"
+                            autoplay
+                            playsinline>
+                        </video>
+
+                        <button
+                            type="button"
+                            onclick="closeCertificateCamera()"
+                            class="close-camera-btn"
+                        >
+                            Close Camera
+                        </button>
+
+                    </div>
+
+
+                    <!-- INSTRUCTIONS -->
+
+                    <div class="scan-instructions">
+
+                        <p>
+                            <span>1</span><%= cdata.instruction %>
+                        </p>
+<!-- 
+                        <p>
+                            <span>2</span>
+                            Camera permission Allow करा
+                        </p>
+
+                        <p>
+                            <span>3</span>
+                            Certificate वरील QR camera समोर ठेवा
+                        </p>
+
+                        <p>
+                            <span>4</span>
+                            Scan successful झाल्यानंतर माहिती पहा
+                        </p> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<%-include('footer.ejs');%>

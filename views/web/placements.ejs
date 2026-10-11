@@ -1,0 +1,525 @@
+<%-include('header.ejs');%>
+<section class="placements-section" id="placements">
+
+    <!-- PAGE TITLE -->
+    <div class="placements-title">
+        <h1>    <%= pdata.title1 %></h1>
+    </div>
+
+
+    <div class="placements-container">
+
+        <!-- ================= PLACEMENT ENQUIRY ================= -->
+
+        <div class="placement-enquiry">
+
+            <div>
+                <h2>  <%= pdata.title_2 %></h2>
+
+                <p>
+                    <%= pdata.desc1 %>
+                </p>
+            </div>
+
+            <button onclick="openEnquiry()">
+                <i class="fa-solid fa-upload"></i>
+                Get Placement Enquiry
+            </button>
+
+        </div>
+
+
+        <!-- ================= TECHNOLOGIES ================= -->
+
+      <!-- TECHNOLOGIES WE TRAIN -->
+<section class="technologies-section">
+
+    <div class="section-title">
+        <h2><%= pdata.title_3 %></h2>
+        <p><%= pdata.desc2 %></p>
+    </div>
+
+    <div class="technology-grid">
+
+        <div class="technology-card">
+            <img src="/admin/img/<%= pdata.img %>">
+            <span> <%= pdata.course_name %></span>
+        </div>
+
+        <!-- <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+            <span>CSS3</span>
+        </div> -->
+
+        <!-- <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+            <span>Bootstrap</span>
+        </div> -->
+
+        <!-- <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+            <span>JavaScript</span>
+        </div> -->
+<!-- 
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jQuery">
+            <span>jQuery</span>
+        </div> -->
+
+        <!-- <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg" alt="JSON">
+            <span>JSON</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/axios/axios-plain.svg" alt="AJAX">
+            <span>AJAX</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
+            <span>Angular</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+            <span>PHP</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" alt="CodeIgniter">
+            <span>CodeIgniter</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
+            <span>Laravel</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <span>Python</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+            <span>Django</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+            <span>React</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node JS">
+            <span>Node JS</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express JS">
+            <span>Express JS</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+            <span>Java</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring">
+            <span>Spring</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" alt="Hibernate">
+            <span>Hibernate</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+            <span>MySQL</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sublimetext/sublimetext-original.svg" alt="Sublime Text">
+            <span>Sublime Text</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+            <span>VS Code</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman">
+            <span>Postman</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg" alt="ChatGPT">
+            <span>ChatGPT</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud">
+            <span>Google Cloud</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS">
+            <span>AWS</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gemini/gemini-original.svg" alt="Gemini">
+            <span>Gemini</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue JS">
+            <span>Vue JS</span>
+        </div>
+
+        <div class="technology-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress">
+            <span>WordPress</span>
+        </div> -->
+
+    </div>
+
+</section>
+
+        <!-- ================= CURRENT PLACEMENTS ================= -->
+
+        <div class="current-placement">
+
+            <h2>  <%= pdata.title_4 %></h2>
+
+            <p class="placement-subtitle">
+                 <%= pdata.desc3 %>
+            </p>
+
+
+            <div class="placement-grid">
+
+                <!-- CARD 1 -->
+                <div class="placement-card">
+
+                    <div class="congratulation">
+                        <span>Congratulations!</span>
+                    </div>
+
+                    <div class="student-photo">
+                        <img src="/admin/img/<%= pdata.img2 %>"
+                             alt="Student">
+                    </div>
+
+                    <h3><%= pdata.student_name %></h3>
+
+                    <p>
+                        <%= pdata.desc4 %>
+                    </p>
+
+                    <div class="company">
+                        <i class="<%= pdata.icon1 %>"></i>
+                         <%= pdata.company %>
+                    </div>
+
+                </div>
+
+<!-- 
+                <div class="placement-card">
+
+                    <div class="congratulation">
+                        <span>Congratulations!</span>
+                    </div>
+
+                    <div class="student-photo">
+                        <img src="https://i.pravatar.cc/150?img=12"
+                             alt="Student">
+                    </div>
+
+                    <h3>Parmeshwar Durgist</h3>
+
+                    <p>
+                        "From classroom to career — A2Z IT HUB made it
+                        possible."
+                    </p>
+
+                    <div class="company">
+                        <i class="fa-solid fa-briefcase"></i>
+                        WorkN AI Technology
+                    </div>
+
+                </div> -->
+
+
+                CARD 3
+                <!-- <div class="placement-card">
+
+                    <div class="congratulation">
+                        <span>Congratulations!</span>
+                    </div>
+
+                    <div class="student-photo">
+                        <img src="https://i.pravatar.cc/150?img=11"
+                             alt="Student">
+                    </div>
+
+                    <h3>Rishi Pandya</h3>
+
+                    <p>
+                        "Grateful to A2Z IT HUB for guiding me from
+                        beginner to professional."
+                    </p>
+
+                    <div class="company">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Accenture
+                    </div>
+
+                </div> -->
+
+
+                <!-- CARD 4 -->
+                <!-- <div class="placement-card">
+
+                    <div class="congratulation">
+                        <span>Congratulations!</span>
+                    </div>
+
+                    <div class="student-photo">
+                        <img src="https://i.pravatar.cc/150?img=13"
+                             alt="Student">
+                    </div>
+
+                    <h3>Sushant Gunjal</h3>
+
+                    <p>
+                        "A2Z IT HUB helped me build my skills and
+                        confidence."
+                    </p>
+
+                    <div class="company">
+                        <i class="fa-solid fa-briefcase"></i>
+                        WebLibr Services
+                    </div>
+
+                </div> -->
+
+
+                <!-- CARD 5 -->
+                <!-- <div class="placement-card">
+
+                    <div class="congratulation">
+                        <span>Congratulations!</span>
+                    </div>
+
+                    <div class="student-photo">
+                        <img src="https://i.pravatar.cc/150?img=14"
+                             alt="Student">
+                    </div>
+
+                    <h3>Sarthak Misal</h3>
+
+                    <p>
+                        "The practical training helped me become
+                        industry ready."
+                    </p>
+
+                    <div class="company">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Retailware
+                    </div>
+
+                </div> -->
+
+
+                <!-- CARD 6 -->
+                <!-- <div class="placement-card">
+
+                    <div class="congratulation">
+                        <span>Congratulations!</span>
+                    </div> -->
+
+                    <!-- <div class="student-photo"> -->
+                        <!-- <img src="https://i.pravatar.cc/150?img=15"
+                             alt="Student">
+                    </div> -->
+
+                    <!-- <h3>Sandeep Chavan</h3> -->
+<!-- 
+                    <p>
+                        "The guidance and consistent support helped me
+                        achieve my career goal."
+                    </p>
+
+                    <div class="company">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Cloud 9 Technology
+                    </div> -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= VIDEO SUCCESS STORIES ================= -->
+
+        <div class="success-stories">
+
+            <h2> <%= pdata.title_5 %></h2>
+
+            <div class="video-grid">
+
+                <div class="video-card">
+
+                    <div class="video-box"
+                         onclick="playPlacementVideo(this)">
+                        <i class=" <%= pdata.icon_2 %>"></i>
+                    </div>
+
+                    <h3> <%= pdata.student_name_2 %></h3>
+                    <p>  <%= pdata.course %></p>
+
+                </div>
+
+
+                <!-- <div class="video-card">
+
+                    <div class="video-box"
+                         onclick="playPlacementVideo(this)">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+
+                    <h3>Bhavika Gugale</h3>
+                    <p>Full Stack Web Development</p>
+
+                </div> -->
+
+<!-- 
+                <div class="video-card">
+
+                    <div class="video-box"
+                         onclick="playPlacementVideo(this)">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+
+                    <h3>Dhiraj Sommarne</h3>
+                    <p>MERN Stack Development</p>
+
+                </div> -->
+<!-- 
+            </div>
+
+
+            <button class="load-video-btn"
+                    onclick="loadMoreVideos()">
+                Load More Videos
+                <i class="fa-solid fa-play"></i>
+            </button>
+
+        </div> -->
+
+
+        <!-- ================= TESTIMONIALS ================= -->
+<!-- 
+        <div class="testimonials">
+
+            <h2>STUDENT TESTIMONIALS</h2>
+
+
+            <div class="testimonial-grid">
+
+                <div class="testimonial-card">
+
+                    <div class="review-header">
+                        <span>Review</span>
+                    </div>
+
+                    <div class="review-photo">
+                        <img src="https://i.pravatar.cc/150?img=33"
+                             alt="Student">
+                    </div>
+
+                    <h3>Yogesh Sonawane</h3>
+
+                    <p>
+                        "The training was very useful and helped me
+                        understand practical development."
+                    </p>
+
+                </div>
+
+
+                <div class="testimonial-card">
+
+                    <div class="review-header">
+                        <span>Review</span>
+                    </div>
+
+                    <div class="review-photo">
+                        <img src="https://i.pravatar.cc/150?img=32"
+                             alt="Student">
+                    </div>
+
+                    <h3>Tejashree Thorat</h3>
+
+                    <p>
+                        "The learning experience was excellent and
+                        improved my confidence."
+                    </p>
+
+                </div>
+
+
+                <div class="testimonial-card">
+
+                    <div class="review-header">
+                        <span>Review</span>
+                    </div>
+
+                    <div class="review-photo">
+                        <img src="https://i.pravatar.cc/150?img=31"
+                             alt="Student">
+                    </div>
+
+                    <h3>Manisha Shinde</h3>
+
+                    <p>
+                        "The practical sessions helped me understand
+                        real-world projects."
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div> -->
+
+    </div>
+
+
+    <!-- ================= BOTTOM CTA ================= -->
+
+    <div class="placement-bottom">
+
+        <h2>Start your placement journey</h2>
+
+        <p>
+            Build your skills, prepare for interviews and move
+            confidently towards your career.
+        </p>
+
+        <button onclick="openEnquiry()">
+            <i class="fa-solid fa-envelope"></i>
+            Enquire Now
+        </button>
+
+    </div>
+
+</section>
+<%-include('footer.ejs');%>

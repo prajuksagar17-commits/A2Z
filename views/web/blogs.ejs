@@ -1,0 +1,238 @@
+<!-- ================= BLOG SECTION ================= -->
+<%-include('header.ejs');%>
+<section class="blog-section" id="blogs">
+
+    <!-- Blog Heading -->
+    <div class="blog-heading">
+        <h1><%= bdata.title1 %></h1>
+
+        <p>
+            <%= bdata.desc %>
+        </p>
+    </div>
+
+
+    <!-- Blog Main Area -->
+    <div class="blog-wrapper">
+
+        <!-- ================= LEFT BLOG POSTS ================= -->
+
+        <div class="blog-posts">
+
+            <!-- Blog Card 1 -->
+            <article class="blog-card">
+
+                <div class="blog-image-box">
+                    <img
+                        src="/admin/img/<%= bdata.img %>"
+                        alt="IT Career for Students"
+                    >
+
+                    <span class="blog-date">21 Sep</span>
+                </div>
+
+                <div class="blog-content">
+
+                    <h2>
+<%= bdata.title2 %>                    
+</h2>
+
+                    <p>
+                     <%= bdata.desc2 %>
+                    </p>
+
+                    <div class="blog-bottom">
+
+                        <a href="#" class="read-btn">
+                            Read Full Article →
+                        </a>
+
+                        <span class="blog-time">
+                            📅 Sep 21, 2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- <article class="blog-card">
+
+                <div class="blog-image-box">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+                        alt="Practical IT Training"
+                    >
+
+                    <span class="blog-date">21 Sep</span>
+
+                </div>
+
+
+                <div class="blog-content">
+
+                    <h2>
+                        Why Practical IT Training Is Important for Building a Successful IT Career
+                    </h2>
+
+                    <p>
+                        Practical IT training helps students understand
+                        real-world technologies, tools and projects required
+                        to build a successful IT career.
+                    </p>
+
+
+                    <div class="blog-bottom">
+
+                        <a href="#" class="read-btn">
+                            Read Full Article →
+                        </a>
+
+                        <span class="blog-time">
+                            📅 Sep 21, 2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article> -->
+
+        </div>
+
+
+        <!-- ================= RIGHT SIDEBAR ================= -->
+
+        <aside class="blog-sidebar">
+
+
+            <!-- Recent Articles -->
+            <div class="sidebar-box">
+
+                <h3><%= bdata.title2_2 %></h3>
+
+                <div class="sidebar-line"></div>
+
+
+                <a href="#" class="recent-article">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=200&q=80"
+                        alt=""
+                    >
+
+                    <span>
+                        How to Start Your IT Career as a Student...
+                    </span>
+
+                </a>
+
+
+                <a href="#" class="recent-article">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=200&q=80"
+                        alt=""
+                    >
+
+                    <span>
+                        Why Practical IT Training Is Important for Building a Successful...
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- Why Choose Training -->
+            <div class="sidebar-box choose-box">
+
+                <h3>🎓 <%= bdata.title3 %></h3>
+
+                <div class="sidebar-line"></div>
+
+
+                <ul>
+
+                    <li>
+                        <span>●</span>
+                       <%= bdata.point2 %>
+                    </li>
+
+                    <!-- <li>
+                        <span>●</span>
+                        Real-Time Expert Trainers
+                    </li>
+
+                    <li>
+                        <span>●</span>
+                        Video Recording Access
+                    </li> -->
+
+                    <!-- <li>
+                        <span>●</span>
+                        Resume & Interview Guidance
+                    </li>
+
+                    <li> -->
+                        <!-- <span>●</span>
+                        Self-Paced Learning
+                    </li> -->
+
+                </ul>
+
+
+                <div class="consult-box">
+
+                    <h4>📢 Start Your Tech Journey!</h4>
+
+                    <p>
+                        Ready to transform your career with technology skills?
+                    </p>
+
+                    <a href="#contact" class="consult-btn">
+                        📢 Get Free Consultation
+                    </a>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <!-- ================= BOTTOM CTA ================= -->
+
+    <div class="blog-cta">
+
+        <h2>
+            Ready to Start Your Tech Career?
+        </h2>
+
+        <p>
+            Join thousands of successful developers who started their
+            journey with us.
+        </p>
+
+
+        <div class="cta-buttons">
+
+            <a href="#courses" class="cta-white">
+                ▣ View All Courses
+            </a>
+
+            <a href="#contact" class="cta-blue">
+                ☎ Contact Us Now
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<%-include('footer.ejs');%>

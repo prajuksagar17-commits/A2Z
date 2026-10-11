@@ -1,0 +1,189 @@
+```ejs
+<%-include('header.ejs');%>
+
+<div class="admin-main">
+
+    <main class="dashboard-content">
+
+        <div class="container-fluid px-3 px-lg-4 py-4">
+
+            <div class="page-heading">
+
+                <div class="page-heading-copy">
+
+                    <span class="page-icon">
+                        <i class="bi bi-book" aria-hidden="true"></i>
+                    </span>
+
+                    <div>
+
+                        <p class="eyebrow mb-1">
+                            Course
+                        </p>
+
+                        <h1 class="h3 mb-1">
+                            Add Course
+                        </h1>
+
+                        <p class="text-muted mb-0">
+                            Add Course information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <section class="row g-3">
+
+                <div class="col-12 col-xl-8">
+
+                    <form class="panel"
+                          action="/admin/course_save"
+                          method="POST"
+                          enctype="multipart/form-data">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h2 class="h5 mb-1 section-title">
+
+                                    <i class="bi bi-book" aria-hidden="true"></i>
+
+                                    <span>
+                                        Course Details
+                                    </span>
+
+                                </h2>
+
+                                <p class="text-muted mb-0">
+                                    Add complete Course information.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Course Title -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="title">
+                                Course Title
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="title"
+                                name="title"
+                                required>
+
+                        </div>
+
+
+                        <!-- Course Description -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="desc">
+                                Description
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="desc"
+                                name="desc"
+                                rows="5"
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- Course Image -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="img">
+                                Course Image
+                            </label>
+
+                            <input
+                                type="file"
+                                class="form-control"
+                                id="img"
+                                name="img"
+                                accept="image/*">
+
+                        </div>
+
+
+                        <!-- Course Name -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="course_name">
+                                Course Name
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="course_name"
+                                name="course_name"
+                                required>
+
+                        </div>
+
+
+                        <!-- Course Description -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="course_desc">
+                                Course Description
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="course_desc"
+                                name="course_desc"
+                                rows="5"
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- Submit -->
+
+                        <div class="d-flex justify-content-end mt-4">
+
+                            <button
+                                class="btn btn-primary"
+                                type="submit">
+
+                                <i class="bi bi-save" aria-hidden="true"></i>
+
+                                Save Course
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+<%-include('footer.ejs');%>
+```

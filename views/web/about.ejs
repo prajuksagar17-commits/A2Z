@@ -1,0 +1,277 @@
+<!-- ================= ABOUT PAGE ================= -->
+<%-include('header.ejs');%>
+<section class="about-page">
+
+    <!-- PAGE TITLE -->
+    <div class="about-banner">
+        <h1>ABOUT US</h1>
+    </div>
+
+
+    <!-- ABOUT INTRO -->
+    <div class="about-container">
+
+        <div class="about-intro">
+
+            <div class="about-text">
+
+                <h2> <%= adata.title %></h2>
+
+                <h3>About Us</h3>
+
+                <p>
+                   <%= adata.a_desc %>
+                </p>
+
+            </div>
+
+            <div class="about-image">
+                <img src="/img/<%= adata.a_img %>"height="100px" 
+                     alt="Students Learning">
+            </div>
+
+        </div>
+
+
+        <!-- ================= CEO DESK ================= -->
+
+        <div class="section-heading">
+
+            <span>LEADERSHIP</span>
+
+            <h2>CEO Desk</h2>
+
+            <p>
+                A message from our leadership — guiding students to
+                Learn, Build & Grow.
+            </p>
+
+        </div>
+
+
+        <div class="ceo-card">
+
+            <div class="ceo-image">
+
+                <img src="/img/<%= adata.ceo_img %>"
+                     alt="CEO">
+
+                <h3> <%= adata.ceo_name %></h3>
+
+                <p> <%= adata.c_position %></p>
+
+            </div>
+
+
+            <div class="ceo-content">
+
+                <h2>CEO Desk</h2>
+
+                <h3>
+                    A Vision to Empower, A Mission to Transform
+                </h3>
+
+                <p>
+                    At A2Z IT HUB, we believe that every student has
+                    the potential to build a successful career when
+                    given the right skills, guidance, and opportunities.
+                </p>
+
+              
+
+                <strong>
+                    Learn Today. Build Tomorrow. Grow Beyond.
+                </strong>
+
+                <p class="ceo-sign">
+                    — Rahul Misal<br>
+                    <i>CEO & Founder, A2Z IT HUB PVT. LTD.</i>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= MISSION VISION ================= -->
+
+        <div class="section-heading">
+
+            <span>OUR PURPOSE</span>
+
+            <h2>   <%= adata.vision_title %></h2>
+
+        </div>
+
+
+        <!-- VISION -->
+
+        <div class="about-row">
+
+            <div class="row-content">
+
+                <h3>OUR VISION</h3>
+
+                <p>
+   <%= adata.vision_desc %>
+
+                </p>
+            </div>
+
+            <div class="row-image">
+
+                <img src="/img/<%= adata.vision_img %>"
+                     alt="Our Vision">
+
+            </div>
+
+        </div>
+
+
+        <!-- MISSION -->
+
+        <div class="about-row reverse">
+
+            <div class="row-image">
+
+                <img src="<%= adata.mission_img %>"
+                     alt="Our Mission">
+
+            </div>
+
+            <div class="row-content">
+
+                <h3> <%= adata.mission_title %></h3>
+
+                <p>  
+                           <%= adata.mission_desc %>
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= EDUCATION ================= -->
+
+        <!-- <div class="about-row">
+
+            <div class="row-content">
+
+                <h3>A2Z IT HUB PVT. LTD. EDUCATION</h3>
+
+                <p>
+                    A2Z IT HUB PVT. LTD. provides industry-oriented
+                    training and skill development programs designed
+                    for engineering students, graduates, corporate
+                    professionals, and aspiring technology learners.
+                </p>
+
+                <p>
+                    Our education programs focus on current
+                    technologies, practical learning, real-world
+                    projects, hands-on training, and expert
+                    mentorship.
+                </p>
+
+                <p>
+                    We aim to bridge the gap between academic
+                    education and industry requirements by creating
+                    a practical learning environment.
+                </p>
+
+            </div>
+
+            <div class="row-image">
+
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644"
+                     alt="Education">
+
+            </div>
+
+        </div> -->
+
+
+        <!-- ================= CAREER ================= -->
+
+        <!-- <div class="about-row reverse">
+
+            <div class="row-image">
+
+                <img src="https://a2zithub.org/training/uploads/178998938022736508.png"
+                     alt="Career">
+
+            </div>
+
+            <div class="row-content">
+
+                <h3>A2Z IT HUB PVT. LTD. CAREER</h3>
+
+                <p>
+                    A2Z IT HUB is committed to helping students and
+                    aspiring IT professionals build successful
+                    careers in technology.
+                </p>
+
+                <p>
+                    Our career support focuses on technical skills,
+                    interview preparation, resume building,
+                    professional development, internships, and
+                    placement opportunities.
+                </p>
+
+                <p>
+                    We help learners understand industry requirements
+                    and prepare themselves for real-world career
+                    opportunities.
+                </p>
+
+            </div>
+
+        </div> -->
+
+
+        <!-- ================= R&D ================= -->
+<!-- 
+        <div class="about-row">
+
+            <div class="row-image">
+
+                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789"
+                     alt="Research and Development">
+
+            </div>
+
+            <div class="row-content">
+
+                <h3>A2Z IT HUB PVT. LTD. R&D</h3>
+
+                <p>
+                    A2Z IT HUB PVT. LTD. is committed to continuous
+                    Research & Development in emerging technologies
+                    and innovative digital solutions.
+                </p>
+
+                <p>
+                    Our R&D initiatives focus on exploring new ideas,
+                    solving real-world technology challenges, and
+                    developing practical solutions that can create
+                    meaningful value for students, businesses, and
+                    society.
+                </p>
+
+                <p>
+                    We continuously work on web development, software
+                    solutions, emerging technologies, automation,
+                    and technology-driven projects.
+                </p>
+
+            </div>
+
+        </div> -->
+
+    </div>
+
+</section>
+<%-include('footer.ejs');%>

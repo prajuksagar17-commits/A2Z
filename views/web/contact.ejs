@@ -1,0 +1,85 @@
+<%-include('header.ejs');%>
+
+
+    <!-- Contact Heading -->
+    <section class="contact-heading">
+
+        <h1><%= cdata.title %></h1>
+
+        <p>
+           <%= cdata.desc %>
+        </p>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+
+        <!-- Form -->
+        <div class="form-box">
+
+            <h2>Send a Message</h2>
+
+            <form>
+
+                <input type="text"
+                       placeholder="<%= cdata.name %> "
+                       required>
+
+                <input type="email"
+                       placeholder="<%= cdata.email %>"
+                       required>
+
+                <input type="tel"
+                       placeholder="<%= cdata.mobile %>"
+                       maxlength="10"
+                       required>
+
+                <input type="text"
+                       placeholder="<%= cdata.sub %>">
+
+                <textarea
+                    placeholder="<%= cdata.mess %>"
+                    required></textarea>
+
+                <button type="submit">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Submit Enquiry
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- Map -->
+        <div class="map-box">
+
+            <div class="map-heading">
+                <h2>Office Location</h2>
+
+                <p>
+                    Balikashram Rd, Lendkar Mala, Ahilyanagar,
+                    Maharashtra 414001
+                </p>
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps?q=A2Z%20IT%20HUB%20PVT%20LTD%20Ahilyanagar%20Maharashtra&output=embed"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </section>
+
+
+    <!-- Floating Enquiry Button -->
+    <button class="floating-enquiry">
+        <i class="fa-solid fa-message"></i>
+        Enquiry
+    </button>
+
+<%-include('footer.ejs');%>

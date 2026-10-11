@@ -1,0 +1,45 @@
+
+<%-include('header.ejs');%>
+<section class="batches-section" id="batches">
+
+    <!-- Red Heading Banner -->
+    <div class="batch-title">
+        <h1><%=batch.title%></h1>
+    </div>
+
+    <!-- Batch Information -->
+    <div class="batch-content">
+
+        <p class="batch-description">
+          <%=batch.desc%>
+        </p>
+
+        <div class="batch-enquiry">
+           
+
+            <button class="batch-btn" onclick="openEnquiry()">
+                Enquire Now
+            </button>
+        </div>
+
+        <!-- Counselling Box -->
+        <div class="counselling-box">
+
+            <h2><%=batch.title_2%></h2>
+
+            <p>
+               <%=batch.desc_2%>
+            </p>
+
+            <button class="counselling-btn" onclick="openEnquiry()">
+                <i class="fa-solid fa-envelope"></i>
+                Free Counselling
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<%-include('footer.ejs');%>
+<!-- ================= END BATCHES SECTION ================= -->

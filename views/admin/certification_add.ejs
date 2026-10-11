@@ -1,0 +1,277 @@
+<%-include('header.ejs');%>
+
+<div class="admin-main">
+
+    <main class="dashboard-content">
+
+        <div class="container-fluid px-3 px-lg-4 py-4">
+
+            <div class="page-heading">
+
+                <div class="page-heading-copy">
+
+                    <span class="page-icon">
+                        <i class="bi bi-award" aria-hidden="true"></i>
+                    </span>
+
+                    <div>
+
+                        <p class="eyebrow mb-1">
+                            Certification
+                        </p>
+
+                        <h1 class="h3 mb-1">
+                            Add Certification
+                        </h1>
+
+                        <p class="text-muted mb-0">
+                            Add Certification information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <section class="row g-3">
+
+                <div class="col-12 col-xl-8">
+
+                    <form class="panel"
+                          action="/admin/certification_save"
+                          method="POST">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h2 class="h5 mb-1 section-title">
+
+                                    <i class="bi bi-award" aria-hidden="true"></i>
+
+                                    <span>
+                                        Certification Details
+                                    </span>
+
+                                </h2>
+
+                                <p class="text-muted mb-0">
+                                    Add complete Certification information.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Title 1 -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="title1">
+                                Title 1
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="title1"
+                                name="title1"
+                                required>
+
+                        </div>
+
+
+                        <!-- Description 1 -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="desc1">
+                                Description 1
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="desc1"
+                                name="desc1"
+                                rows="5"
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- Title 2 -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="title_2">
+                                Title 2
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="title_2"
+                                name="title_2"
+                                required>
+
+                        </div>
+
+
+                        <!-- Name -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="name">
+                                Name
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                name="name"
+                                required>
+
+                        </div>
+
+
+                        <!-- Certification Number -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="certification_no">
+                                Certification Number
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="certification_no"
+                                name="certification_no"
+                                required>
+
+                        </div>
+
+
+                        <!-- Mobile -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="mobile">
+                                Mobile
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="mobile"
+                                name="mobile"
+                                required>
+
+                        </div>
+
+
+                        <!-- Icon -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="icon">
+                                Icon
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="icon"
+                                name="icon"
+                                required>
+
+                        </div>
+
+
+                        <!-- Title 3 -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="title_3">
+                                Title 3
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="title_3"
+                                name="title_3"
+                                required>
+
+                        </div>
+
+
+                        <!-- Description 2 -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="desc2">
+                                Description 2
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="desc2"
+                                name="desc2"
+                                rows="5"
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- Instruction -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="instruction">
+                                Instruction
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="instruction"
+                                name="instruction"
+                                rows="5"
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- Submit -->
+
+                        <div class="d-flex justify-content-end mt-4">
+
+                            <button
+                                class="btn btn-primary"
+                                type="submit">
+
+                                <i class="bi bi-save" aria-hidden="true"></i>
+
+                                Save Certification
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+<%-include('footer.ejs');%>

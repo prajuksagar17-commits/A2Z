@@ -1,0 +1,98 @@
+<%-include('header.ejs');%>
+
+<div class="admin-main">
+    <main class="dashboard-content">
+        <div class="container-fluid px-3 px-lg-4 py-4">
+
+            <div class="page-heading">
+                <div class="page-heading-copy">
+                    <span class="page-icon">
+                        <i class="bi bi-envelope"></i>
+                    </span>
+                    <div>
+                        <p class="eyebrow mb-1">Contact</p>
+                        <h1 class="h3 mb-1">Add Contact</h1>
+                        <p class="text-muted mb-0">Add Contact Information.</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="row g-3">
+                <div class="col-12 col-xl-8">
+
+                    <form class="panel"
+                        action="/admin/contact_save"
+                        method="POST">
+
+                        <div class="panel-header">
+                            <h5 class="mb-0">Contact Information</h5>
+                        </div>
+
+                        <div class="p-3 p-lg-4">
+
+                            <div class="mb-3">
+                                <label class="form-label">Title</label>
+                                <input type="text" name="title"
+                                    class="form-control"
+                                    placeholder="Enter title" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Description</label>
+                                <textarea name="desc"
+                                    class="form-control" rows="3"
+                                    placeholder="Enter description" required></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Name</label>
+                                <input type="text" name="name"
+                                    class="form-control"
+                                    placeholder="Enter name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" name="email"
+                                    class="form-control"
+                                    placeholder="Enter email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Mobile</label>
+                                <input type="text" name="mobile"
+                                    class="form-control"
+                                    placeholder="Enter mobile number" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Subject</label>
+                                <input type="text" name="sub"
+                                    class="form-control"
+                                    placeholder="Enter subject" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Message</label>
+                                <textarea name="mess"
+                                    class="form-control" rows="4"
+                                    placeholder="Enter message" required></textarea>
+                            </div>
+
+                            <div class="d-flex justify-content-end mt-4">
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="bi bi-save"></i> Save Contact
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+</div>
+
+<%-include('footer.ejs');%>

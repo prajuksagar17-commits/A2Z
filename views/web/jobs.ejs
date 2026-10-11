@@ -1,0 +1,482 @@
+<%-include('header.ejs');%>
+
+<!-- ================= JOB TITLE BANNER ================= -->
+
+<section class="page-banner">
+
+    <h1>JOBS</h1>
+
+</section>
+
+
+<!-- ================= CAREER OPPORTUNITIES ================= -->
+
+<section class="jobs-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2><%= jdata.title_1 %></h2>
+
+            <p>
+                 <%= jdata.desc1 %>
+            </p>
+
+        </div>
+
+
+        <!-- ================= FILTER BOX ================= -->
+
+        <div class="filter-box">
+
+            <div class="filter-item">
+
+                <label>POSITION</label>
+
+                <select id="positionFilter">
+
+                    <option value="">All Positions</option>
+
+                    <option value="Angular Developer">
+                         <%= jdata.position %>
+                    </option>
+
+                    <option value="Node.js Developer">
+                        Node.js Developer
+                    </option>
+
+                    <option value="Java Developer">
+                        Java Developer
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="filter-item">
+
+                <label>AREA / CITY</label>
+
+                <select id="areaFilter">
+
+                    <option value="">All Areas</option>
+
+                    <option value="Ahmednagar">
+                        <%= jdata.city %>
+                    </option>
+
+                    <option value="Pune">
+                        Pune
+                    </option>
+
+                    <option value="Mumbai">
+                        Mumbai
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="filter-item">
+
+                <label>SEARCH</label>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder=" <%= jdata.search %>..."
+                >
+
+            </div>
+
+
+            <button class="filter-btn" onclick="filterJobs()">
+                <i class="fa-solid fa-filter"></i>
+                Filter
+            </button>
+
+
+            <button class="reset-btn" onclick="resetJobs()">
+                Reset
+            </button>
+
+        </div>
+
+
+        <!-- JOB COUNT -->
+
+        <div class="job-count">
+
+            <span id="jobCount">3</span> jobs found
+
+        </div>
+
+
+        <!-- ================= JOB CARDS ================= -->
+
+        <div class="jobs-grid" id="jobsContainer">
+
+
+            <!-- JOB 1 -->
+
+            <div class="job-card"
+                 jdata-position="Angular Developer"
+                 jdata-area="Ahmednagar">
+
+                <div class="job-top-line"></div>
+
+                <h3> <%= jdata.job %></h3>
+
+                <div class="job-info">
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                       <%= jdata.j_experience %>
+                    </span>
+
+                    <span class="salary">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                      <%= jdata.sallery %>
+                    </span>
+
+                </div>
+
+                <div class="location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <%= jdata.location %>
+
+                </div>
+
+
+                <h4>ROLE DETAILS</h4>
+
+                <div class="role-details">
+
+                    <p>
+                         <%= jdata.role_Description %>
+                    </p>
+                
+
+                </div>
+
+                <a href="#" class="read-more">
+                    Read more
+                </a>
+
+                <button class="apply-btn"
+                        onclick="openApply('Angular Developer')">
+
+                    Enquire / Apply
+
+                </button>
+
+            </div>
+
+
+            <!-- JOB 2 -->
+
+            <!-- <div class="job-card"
+                 jdata-position="Node.js Developer"
+                 jdata-area="Ahmednagar">
+
+                <div class="job-top-line"></div>
+
+                <h3>Node.js Developer</h3>
+
+                <div class="job-info">
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        2+ years
+                    </span>
+
+                    <span class="salary">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        ₹2,50,000 - ₹5,00,000 a year
+                    </span>
+
+                </div>
+
+                <div class="location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Ahmednagar
+
+                </div>
+
+
+                <h4>ROLE DETAILS</h4>
+
+                <div class="role-details">
+
+                    <p>
+                        Proficient in Node.js and backend development.
+                    </p>
+
+                    <p>
+                        Strong understanding of REST APIs,
+                        Express.js and server-side programming.
+                    </p>
+
+                    <p>
+                        Knowledge of jdatabases and API integration.
+                    </p>
+
+                    <p>
+                        Ability to work with frontend development teams.
+                    </p>
+
+                </div>
+
+                <a href="#" class="read-more">
+                    Read more
+                </a>
+
+                <button class="apply-btn"
+                        onclick="openApply('Node.js Developer')">
+
+                    Enquire / Apply
+
+                </button>
+
+            </div> -->
+
+
+            <!-- JOB 3 -->
+<!-- 
+            <div class="job-card"
+                 jdata-position="Java Developer"
+                 jdata-area="Ahmednagar">
+
+                <div class="job-top-line"></div>
+
+                <h3>Java Developer</h3>
+
+                <div class="job-info">
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        3+ years
+                    </span>
+
+                    <span class="salary">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        ₹2,50,000 - ₹5,00,000 a year
+                    </span>
+
+                </div>
+
+                <div class="location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Ahmednagar
+
+                </div>
+
+
+                <h4>ROLE DETAILS</h4>
+
+                <div class="role-details">
+
+                    <p>
+                        Strong knowledge of Core Java and OOP concepts.
+                    </p>
+
+                    <p>
+                        Understanding of Java frameworks and development.
+                    </p>
+
+                    <p>
+                        Knowledge of jdatabases and SQL.
+                    </p>
+
+                    <p>
+                        Ability to develop and maintain web applications.
+                    </p>
+
+                </div>
+
+                <a href="#" class="read-more">
+                    Read more
+                </a>
+
+                <button class="apply-btn"
+                        onclick="openApply('Java Developer')">
+
+                    Enquire / Apply
+
+                </button>
+
+            </div> -->
+
+        </div>
+
+
+        <!-- ================= JOB UPDATE FORM ================= -->
+
+        <div class="job-update-box">
+
+            <div class="update-content">
+
+                <h2><%= jdata.title_2 %></h2>
+
+                <p>
+                   <%= jdata.desc2 %>
+                </p>
+
+            </div>
+
+
+            <form class="update-form"
+                  onsubmit="notifyJob(event)">
+
+                <input
+                    type="text"
+                    placeholder="<%= jdata.name %>"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder=" <%= jdata.email %>"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    placeholder="<%= jdata.mobile %>"
+                    maxlength="10"
+                    required
+                >
+
+                <input
+                    type="text"
+                    placeholder=" <%= jdata.preffered_position %>"
+                >
+
+                <input
+                    type="text"
+                    placeholder="<%= jdata.preffered_area %>"
+                >
+
+                <button type="submit">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    Notify Me
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= PLACEMENT GUIDANCE ================= -->
+
+<section class="placement-guidance">
+
+    <div class="guidance-content">
+
+        <h2>Need placement guidance?</h2>
+
+        <p>
+            Talk to our counsellors for job-oriented courses
+            and interview prep.
+        </p>
+
+        <button onclick="openEnquiry()">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            Enquire Now
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FLOATING ENQUIRY ================= -->
+
+<button class="floating-enquiry"
+        onclick="openEnquiry()">
+
+    <i class="fa-solid fa-envelope"></i>
+
+    Enquiry
+
+</button>
+
+
+<!-- ================= ENQUIRY MODAL ================= -->
+
+<div class="modal" id="enquiryModal">
+
+    <div class="modal-box">
+
+        <button class="close-modal"
+                onclick="closeEnquiry()">
+
+            ×
+
+        </button>
+
+        <h2>Enquire Now</h2>
+
+        <p>
+            Fill in your details and our team will contact you.
+        </p>
+
+        <form onsubmit="submitEnquiry(event)">
+
+            <input
+                type="text"
+                placeholder="First Name"
+                required
+            >
+
+            <input
+                type="text"
+                placeholder="Last Name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Email"
+                required
+            >
+
+            <input
+                type="tel"
+                placeholder="Mobile Number"
+                maxlength="10"
+                required
+            >
+
+            <button type="submit">
+                Submit Enquiry
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<%-include('footer.ejs');%>
