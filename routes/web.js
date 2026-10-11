@@ -5,10 +5,10 @@ var mysql=require('mysql2');
 var util=require('util');
 router.use(express.urlencoded({extended:true}));
 var conn=mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'root',
-    database:'a2z'
+     host:'bhqebsznlryjywsg1wsq-mysql.services.clever-cloud.com',
+    user:'uxhfsfcyoxpyjmjf',
+    password:'jZyzYgCGr2pqVyrX9kiP',
+    database:'bhqebsznlryjywsg1wsq'
 })
 var exe=util.promisify(conn.query).bind(conn);
 router.get('/',(req,res)=>{
