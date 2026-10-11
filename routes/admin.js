@@ -8,10 +8,10 @@ var util=require('util');
 var fs=require('fs');
 const path = require('path');
 var conn=mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'root',
-    database:'a2z'
+    host:'bhqebsznlryjywsg1wsq-mysql.services.clever-cloud.com',
+    user:'uxhfsfcyoxpyjmjf',
+    password:'jZyzYgCGr2pqVyrX9kiP',
+    database:'bhqebsznlryjywsg1wsq'
 })
 const fileUpload = require("express-fileupload");
 
